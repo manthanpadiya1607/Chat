@@ -5,9 +5,6 @@ from django.contrib.auth.models import User, auth
 from django.contrib import messages
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from rest_framework.authtoken.serializers import AuthTokenSerializer
-from knox.auth import AuthToken
-
 # Create your views here.
 def home(request):
     return render(request, 'home1.html')
